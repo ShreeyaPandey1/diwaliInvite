@@ -93,16 +93,25 @@ export async function submitRsvp(rsvpData) {
   }
 
   // Local Express Mode
-  const res = await fetch(`${LOCAL_API_BASE}/rsvps`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(rsvpData)
-  });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || 'Failed to submit RSVP to local server.');
+  try {
+    const res = await fetch(`${LOCAL_API_BASE}/rsvps`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(rsvpData)
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(data.error || 'Failed to submit RSVP to local server.');
+    }
+    return data;
+  } catch (err) {
+    if (err.message && (err.message.includes('Failed to fetch') || err.message.includes('NetworkError'))) {
+      throw new Error(
+        'Server unreachable. If running locally, please ensure `npm start` is running on port 5000. If deployed on GitHub Pages, make sure `VITE_RSVP_ENDPOINT` is configured for Google Sheets.'
+      );
+    }
+    throw err;
   }
-  return data;
 }
 
 /**
