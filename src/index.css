@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom festive gradients and glowing effects */
+.bg-diwali-radial {
+  background: radial-gradient(circle at 50% 20%, #2a0845 0%, #15002b 45%, #080014 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff3b0 0%, #f7c948 40%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-festive-gradient {
+  background: linear-gradient(135deg, #ff2a85 0%, #ff7a1a 50%, #ffd43b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(247, 201, 72, 0.4);
+  box-shadow: 0 0 20px rgba(247, 201, 72, 0.25), inset 0 0 15px rgba(247, 201, 72, 0.1);
+}
+
+.card-glass {
+  background: rgba(27, 13, 47, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-glass-interactive {
+  background: rgba(35, 17, 60, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-glass-interactive:hover {
+  transform: translateY(-4px);
+  border-color: rgba(247, 201, 72, 0.5);
+  box-shadow: 0 12px 30px rgba(123, 44, 191, 0.3), 0 0 20px rgba(247, 201, 72, 0.2);
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #f7c948 0%, #ff9e00 100%);
+  box-shadow: 0 4px 25px rgba(247, 201, 72, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  background: linear-gradient(135deg, #ffe082 0%, #ffaa00 100%);
+  box-shadow: 0 6px 35px rgba(247, 201, 72, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.pink-button {
+  background: linear-gradient(135deg, #ff2a85 0%, #7b2cbf 100%);
+  box-shadow: 0 4px 25px rgba(255, 42, 133, 0.4);
+  transition: all 0.3s ease;
+}
+
+.pink-button:hover {
+  box-shadow: 0 6px 35px rgba(255, 42, 133, 0.6);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0c071e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d0f4d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f7c948;
+}

@@ -1,0 +1,106 @@
+export const defaultEventConfig = {
+  eventTitle: "Diwali 2026",
+  welcomeEyebrow: "YOU’RE INVITED!",
+  welcomeTitle: "THE DIWALI PARTY",
+  welcomeSupporting: "Lights, laughter, colours & a little chaos. Let’s make this Diwali unforgettable!",
+  welcomeButtonText: "LET’S CELEBRATE ✨",
+  
+  detailsHeading: "LET THE FESTIVITIES BEGIN!",
+  detailsSupporting: "An evening of lights, laughter, good vibes and unforgettable memories awaits.",
+  
+  eventDate: "2026-11-05",
+  startTime: "1:00 PM",
+  endTime: "Late",
+  timeDisplay: "1:00 PM onwards",
+  venueName: "Redora Stays",
+  fullAddress: "Redora Stays, Delhi NCR (Coordinates: 28.726938, 77.094055)",
+  mapUrl: "https://maps.google.com/?q=28.726938,77.094055",
+  hostedBy: "Mauj Masti Mandali",
+  
+  colourPickerHeading: "PICK YOUR SHADE. OWN THE NIGHT.",
+  colourPickerSupporting: "Your outfit, your colour, your vibe. Choose your shade and let’s make this Diwali a whole rainbow!",
+  colourPickerAdditional: "Nine colours. Endless possibilities. One unforgettable night.",
+  dressCodeNote: "Pick one of these nine colours and wear your shade with confidence. Let's make the party extra colourful!",
+  
+  rsvpHeading: "SO, ARE YOU COMING?",
+  rsvpSupporting: "Your presence is the real sparkle. Let us know if we can count you in!",
+  
+  confirmationYesHeading: "IT’S A YES! LET’S MAKE SOME DIWALI MAGIC!",
+  confirmationYesSubtext: "Your spot is noted! Bring your best outfit, your best energy and your festive spirit. This night is going to sparkle!",
+  confirmationNoHeading: "WE’LL MISS YOU! 💌",
+  confirmationNoSubtext: "Sending you lots of light, love and festive wishes this Diwali. Hopefully, we celebrate together soon!",
+  confirmationMaybeHeading: "WE HOPE YOU CAN MAKE IT! ✨",
+  confirmationMaybeSubtext: "Take your time. We hope to celebrate with you soon. You can update your response whenever you’re ready.",
+  
+  isColourRequired: false,
+  isMobileRequired: false,
+  allowGuestCount: true,
+  maxGuestsPerRsvp: 10,
+  adminPassword: "diwali2026",
+  
+  colours: [
+    {
+      id: "royal-purple",
+      name: "Royal Purple",
+      hex: "#7B2CBF",
+      message: "Purple is your power colour! 💜 Regal, royal, and ready to slay!",
+      order: 1
+    },
+    {
+      id: "soft-ivory",
+      name: "Soft Ivory",
+      hex: "#FFFFF0",
+      message: "Ivory exudes pure elegance & timeless festive grace! 🤍✨",
+      order: 2
+    },
+    {
+      id: "blush-pink",
+      name: "Blush Pink",
+      hex: "#F4A6C1",
+      message: "Blush Pink brings the sweetest festive charm & glow! 🌸",
+      order: 3
+    },
+    {
+      id: "hot-pink",
+      name: "Hot Pink",
+      hex: "#FF1493",
+      message: "Hot Pink is high drama, full energy & pure Bollywood! 💖🔥",
+      order: 4
+    },
+    {
+      id: "powder-blue",
+      name: "Powder Blue",
+      hex: "#A7C7E7",
+      message: "Powder Blue is cool, dreamy, and aesthetic royalty! 🩵❄️",
+      order: 5
+    },
+    {
+      id: "emerald-green",
+      name: "Emerald Green",
+      hex: "#008F69",
+      message: "Emerald Green brings rich prosperity & queen vibes! 💚🌿",
+      order: 6
+    },
+    {
+      id: "sunshine-yellow",
+      name: "Sunshine Yellow",
+      hex: "#FFD43B",
+      message: "Sunshine Yellow brings festive radiance & pure joy! 💛☀️",
+      order: 7
+    },
+    {
+      id: "tangerine-orange",
+      name: "Tangerine Orange",
+      hex: "#FF7A1A",
+      message: "Tangerine Orange brings electric energy and firecracker warmth! 🧡🎇",
+      order: 8
+    },
+    {
+      id: "champagne-gold",
+      name: "Champagne Gold",
+      hex: "#D4AF37",
+      message: "Champagne Gold sparkles with pure luxury and starlight! 🌟✨",
+      order: 9
+    }
+  ]
+};
